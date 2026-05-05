@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import schoolGround from "../Assets/images/School.jpeg";
+import schoolGround from "../Assets/images/School.png";
 
 const initialRegisterForm = { fullName: "", email: "", phone: "", studentClass: "", password: "" };
 
@@ -140,25 +140,19 @@ function Header() {
           white-space: nowrap;
         }
 
-        .brand-logo {
-          width: 74px;
-          height: 74px;
-          display: inline-grid;
-          place-items: center;
-          overflow: hidden;
-          border: 2px solid #e2ebe8;
-          border-radius: 50%;
-          background: #ffffff;
-          box-shadow: 0 10px 22px rgba(24, 34, 49, 0.1);
-          flex: 0 0 auto;
-        }
+       .brand-logo {
+  width: 90px;
+  height: 90px;
+  display: inline-grid;
+  place-items: center;
+  flex: 0 0 auto;
+}
 
-        .brand img {
-          width: 145%;
-          height: 145%;
-          object-fit: contain;
-        }
-
+.brand img {
+  width: 170%;
+  height: 120%;
+  object-fit: contain;
+}
         .brand span {
           font-size: clamp(1.15rem, 1.65vw, 1.55rem);
         }

@@ -1,4 +1,4 @@
-import schoolLogo from "../Assets/images/School.jpeg";
+import schoolLogo from "../Assets/images/School.png";
 
 export default function AuthLayout({ title, subtitle, children, toastMessage = "" }) {
   return (
@@ -23,26 +23,19 @@ export default function AuthLayout({ title, subtitle, children, toastMessage = "
           box-shadow: 0 30px 80px rgba(8, 23, 42, 0.28);
           text-align: center;
         }
+.auth-logo-frame {
+  width: 180px;
+  height: 130px;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 4px;
+}
 
-        .auth-logo-frame {
-          width: 104px;
-          height: 104px;
-          display: grid;
-          place-items: center;
-          margin: 0 auto 18px;
-          overflow: hidden;
-          border: 4px solid #ffffff;
-          border-radius: 50%;
-          background: #ffffff;
-          box-shadow: 0 16px 36px rgba(15, 77, 72, 0.2);
-        }
-
-        .auth-logo-frame img {
-          width: 148%;
-          height: 148%;
-          object-fit: contain;
-        }
-
+.auth-logo-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
         .auth-school-name {
           margin: 0 0 8px;
           color: #005f55;

@@ -9,6 +9,7 @@ import Admissions from "./pages/Admissions";
 import Facilities from "./pages/Facilities";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
+import PageTransitionOverlay from "./pages/PageTransitionOverlay";
 
 const appRoutes = [
   { path: "/", element: <Home /> },
@@ -27,6 +28,7 @@ const appRoutes = [
 function App() {
   return (
     <Router>
+      <PageTransitionOverlay />
       <Routes>
         {appRoutes.map((route) => (
           <Route key={route.path} path={route.path} element={route.element} />

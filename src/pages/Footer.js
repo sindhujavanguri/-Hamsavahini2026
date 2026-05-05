@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import schoolGround from "../Assets/images/School.jpeg";
+import schoolGround from "../Assets/images/School.png";
 
 const schoolDetails = {
   name: "Hamsavahini School",
@@ -42,13 +42,11 @@ function Footer() {
           align-items: center;
         }
 
-        .footer-school img {
-          width: 190px;
-          height: 142px;
-          border: 4px solid rgba(255, 255, 255, 0.14);
-          border-radius: 8px;
-          object-fit: cover;
-        }
+       .footer-school img {
+  width: 250px;
+  height: 220px;
+  object-fit: contain;
+}
 
         .footer-school strong {
           display: block;
@@ -112,10 +110,10 @@ function Footer() {
             grid-template-columns: 160px minmax(0, 1fr);
           }
 
-          .footer-school img {
-            width: 160px;
-            height: 126px;
-          }
+         .footer-school img {
+  width: 180px;
+  height: 180px;
+}
         }
 
         @media (max-width: 620px) {
@@ -124,9 +122,9 @@ function Footer() {
           }
 
           .footer-school img {
-            width: 100%;
-            height: 220px;
-          }
+  width: 100%;
+  height: auto;
+}
 
           .footer-bottom {
             justify-content: flex-start;

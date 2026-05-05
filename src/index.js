@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import schoolLogo from './Assets/images/School.jpeg';
+import schoolLogo from './Assets/images/School.png';
 
 document.title = 'Hamsavahini School';
 
